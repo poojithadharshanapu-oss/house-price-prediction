@@ -38,3 +38,10 @@ r2 = r2_score(y_test, y_pred)
 print("\nModel Evaluation")
 print("RMSE:", rmse)
 print("R2 Score:", r2)
+import matplotlib.pyplot as plt
+
+plt.scatter(df['GrLivArea'], df['SalePrice'])
+plt.xlabel('Ground Living Area')
+plt.ylabel('Sale Price')
+plt.title('Living Area vs Sale Price')
+plt.show()
